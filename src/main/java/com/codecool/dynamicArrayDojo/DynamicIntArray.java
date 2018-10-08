@@ -33,6 +33,17 @@ public class DynamicIntArray {
         this.staticArray[size] = number;
     }
 
+    public void remove(int element) {
+        int size = this.staticArray.length;
+        for (int i = 0; i < size; i++) {
+            if (element == this.staticArray[i]) {
+                int numMoved = size - i - 1;
+                System.arraycopy(this.staticArray, i + 1, this.staticArray, i, numMoved);
+            }
+        }
+        increaseCapacity(--size);
+    }
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();

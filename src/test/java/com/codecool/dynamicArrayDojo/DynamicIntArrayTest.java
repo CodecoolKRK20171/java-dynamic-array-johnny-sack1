@@ -21,7 +21,7 @@ class DynamicIntArrayTest {
         String result = " 0 1 2 3 4 5 6 7 8 9 10 32 42";
         assertEquals(result, array.toString());
     }
-/*
+
     @Test
     void removeTest() {
         DynamicIntArray array = createArray(11);
@@ -30,7 +30,7 @@ class DynamicIntArrayTest {
         String result = " 1 2 3 4 6 7 8 9 10";
         assertEquals(result, array.toString());
     }
-
+/*
     @Test
     void removeTest_LastItem()
     {
