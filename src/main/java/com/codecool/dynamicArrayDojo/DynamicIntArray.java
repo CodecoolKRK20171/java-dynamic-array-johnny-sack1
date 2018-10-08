@@ -41,6 +41,19 @@ public class DynamicIntArray {
         increaseCapacity(--size);
     }
 
+    public void insert(int index, int number) {
+        int size = this.staticArray.length;
+
+        if (index <= size) {
+            increaseCapacity(size + 1);
+            System.arraycopy(this.staticArray, index, this.staticArray, index + 1, size - index);
+            this.staticArray[index] = number;
+        }
+        else {
+            add(number);
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
