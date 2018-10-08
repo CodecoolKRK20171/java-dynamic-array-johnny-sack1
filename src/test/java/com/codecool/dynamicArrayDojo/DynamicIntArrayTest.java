@@ -30,7 +30,7 @@ class DynamicIntArrayTest {
         String result = " 1 2 3 4 6 7 8 9 10";
         assertEquals(result, array.toString());
     }
-/*
+
     @Test
     void removeTest_LastItem()
     {
@@ -47,7 +47,7 @@ class DynamicIntArrayTest {
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.remove(10));
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.remove(-1));
     }
-
+/*
     @Test
     void insertTest()
     {
